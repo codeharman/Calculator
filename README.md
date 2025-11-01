@@ -3,7 +3,7 @@
 A simple counter application built using **React** and the **useState** hook.  
 This project demonstrates the basics of React state management — how to update and render values dynamically using hooks.
 
-Visit the Project website [Here](https://calculator-delta-olive-12.vercel.app/)
+Visit the Project website [Here](https://calculator-codeharman.vercel.app/)
 
 ---
 
