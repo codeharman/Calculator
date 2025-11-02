@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function calculatorFunction() {
+function CalculatorFunction() {
 
   const [count, setCounter] = useState(0);
 
@@ -16,9 +16,13 @@ function calculatorFunction() {
     setCounter(0)
   }
 
+  useEffect(() => {
+    document.title = `Count: ${count}`
+  }, [count])
+
   return (
     <>
-       <p class="contact">made by <a href="https://www.linkedin.com/in/codeharman/" target="_blank">@codeharman</a> with ❤️‍🔥. Click here for my <a href="https://github.com/codeharman" target="_blank">Github profile</a></p>
+       <p className="contact">made by <a href="https://www.linkedin.com/in/codeharman/" target="_blank">@codeharman</a> with ❤️‍🔥. Click here for my <a href="https://github.com/codeharman" target="_blank">Github profile</a></p>
       <h1>Counter Program made in React</h1>
       <p className="describe">This is made using the "useState" hook in react</p>
       <p className="result">{count}</p>
@@ -29,4 +33,4 @@ function calculatorFunction() {
   )
 }
 
-export default calculatorFunction;
+export default CalculatorFunction;
